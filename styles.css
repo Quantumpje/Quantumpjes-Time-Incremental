@@ -1,0 +1,12 @@
+.timeCounter {
+    color: gray;
+    font-weight: bold;
+  }
+.tempResetsCounter {
+    color: blueviolet;
+    font-weight: bold;
+  }
+.alphaCounter {
+    color: red;
+    font-weight: bold;
+  }
