@@ -37,7 +37,7 @@
   }
 
   function temporalReset() {
-    if (gameData.time >= (150 * 1.25 ** gameData.temporalResets) / (gameData.alpha + 1)) {
+    if (gameData.time >= (150 * 1.25 ** (gameData.temporalResets - gameData.alpha))) {
       gameData.time = 0
       gameData.timemodLevel = 1
       gameData.temporalResets += 1 + gameData.alpha
@@ -72,7 +72,7 @@
     document.getElementById("alphaGained").innerHTML = format(gameData.alpha, "scientific") + " α gained"
     document.getElementById("buyAlphaButton").innerHTML = "Reset Time, Time Modulator and Temporal Resets for " + format(alphagain, "scientific") + " α, Cost: " + format(gameData.temporalResets, "scientific") + " Temporal Resets(8 needed)"
     document.getElementById("perClickUpgrade").innerHTML = "Upgrade Time Modulator (Currently Level " + format(gameData.timemodLevel, "scientific") + "), Cost: " + format(5 * 2 ** gameData.timemodLevel, "scientific") + " Time"
-    document.getElementById("tempResetButton").innerHTML = "Initiate Temporal Reset, Cost: " + format((150 * 1.25 ** gameData.temporalResets) / (gameData.alpha + 1), "scientific") + " Time and resets Time and Time Modulator"
+    document.getElementById("tempResetButton").innerHTML = "Initiate Temporal Reset, Cost: " + format((150 * 1.25 ** (gameData.temporalResets - gameData.alpha)), "scientific") + " Time and resets Time and Time Modulator"
   }, 50)
 
   var saveGameLoop = window.setInterval(function() {
