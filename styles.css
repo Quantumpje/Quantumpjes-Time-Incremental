@@ -1,0 +1,31 @@
+.timeCounter {
+    color: gray;
+    font-weight: bold;
+  }
+.tempResetsCounter {
+    color: blueviolet;
+    font-weight: bold;
+  }
+.alphaCounter {
+    color: red;
+    font-weight: bold;
+  }
+.betaCounter {
+    color: green;
+    font-weight: bold;
+  }
+body {
+    background-color: black;
+  }
+.normal {
+  color: gray;
+}
+.button {
+  background-color: rgb(48, 48, 48);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+}
+.info {
+  background-color: rgb(131, 125, 125);
+}
