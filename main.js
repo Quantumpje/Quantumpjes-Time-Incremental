@@ -169,5 +169,6 @@
         if (typeof savegame.temporalResets !== "undefined") gameData.temporalResets = savegame.temporalResets;
         if (typeof savegame.alpha !== "undefined") gameData.alpha = savegame.alpha;
         if (typeof savegame.beta !== "undefined") gameData.beta = savegame.beta;
+        if (typeof savegame.progression !== "undefined") gameData.progression = savegame.progression;
       }
     }
