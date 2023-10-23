@@ -58,7 +58,7 @@
     if (gameData.time >= 150 * 1.65 ** gameData.temporalResets) {
       gameData.time = 0
       gameData.timemodLevel = 1
-      gameData.temporalResets += 1 + gameData.alpha
+      gameData.temporalResets += 1
     }
   }
 
