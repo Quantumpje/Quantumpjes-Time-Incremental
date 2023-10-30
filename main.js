@@ -37,7 +37,7 @@
     if (gameData.alpha >= 0.1) {
       gameData.alpha -= 0.1
       gameData.taste += 0.5
-      gameData.time += 500 * Math.sqrt(gameData.taste)
+      gameData.time += 500 * Math.sqrt(gameData.taste + 1)
     }
   }
 
@@ -125,7 +125,7 @@
     document.getElementById("buyBetaButton").innerHTML = "Reset Time, Time Modulator, Temporal Resets and alpha for " + format(betagain, "scientific") + " β based on α (3 minimum)"
     document.getElementById("perClickUpgrade").innerHTML = "Currently Level " + format(gameData.timemodLevel, "scientific") + ", Cost: " + format(5 * 2 ** gameData.timemodLevel, "scientific") + " Time"
     document.getElementById("tempResetButton").innerHTML = "Get " + format(TRgain, "scientific") + " Temporal Resets, resets Time and Time Modulator and is based on Time (150 minimum)"
-    document.getElementById("eatMeatButton").innerHTML = "Eat 1 piece of Meat to gain " + format(500 * Math.sqrt(gameData.taste), "scientific") + " time and improve your taste by +0.5 for 0.1 α"
+    document.getElementById("eatMeatButton").innerHTML = "Eat 1 piece of Meat to gain " + format(500 * Math.sqrt(gameData.taste + 1), "scientific") + " time and improve your taste by +0.5 for 0.1 α"
     if (gameData.temporalResets < 8) {
       document.getElementById("buyAlphaButton2").style.backgroundColor = "rgb(20, 20, 20)"
     }else {
