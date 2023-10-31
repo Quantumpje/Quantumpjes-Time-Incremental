@@ -1,0 +1,4 @@
+- Alex´s css gui update
+- Make alpha further in the proggression of the game
+- add more food types and make it so eating food has a cooldown
+- add beta functionality (probably a farm/garden)
